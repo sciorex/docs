@@ -1,0 +1,53 @@
+name: Documentation Issue
+description: Report an error, typo, or unclear content in the documentation
+labels: ["bug", "documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve our documentation!
+
+  - type: input
+    id: page
+    attributes:
+      label: Page URL
+      description: Link to the documentation page with the issue
+      placeholder: https://docs.sciorex.com/guide/getting-started
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      options:
+        - Typo or grammatical error
+        - Incorrect information
+        - Outdated content
+        - Broken link
+        - Missing information
+        - Unclear explanation
+        - Code example doesn't work
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the issue you found
+      placeholder: |
+        The code example in the "Creating Agents" section throws an error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Fix
+      description: If you know the correct information, please share it
+      placeholder: |
+        The correct syntax should be...
+    validations:
+      required: false

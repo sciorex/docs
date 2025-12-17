@@ -1,0 +1,26 @@
+{
+  "name": "sciorex-docs",
+  "version": "1.0.0",
+  "description": "Official documentation for Sciorex - The King of Knowledge",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sciorex/docs.git"
+  },
+  "keywords": [
+    "sciorex",
+    "documentation",
+    "ai-agents",
+    "orchestration"
+  ],
+  "author": "Sciorex Team",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

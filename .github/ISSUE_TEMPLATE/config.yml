@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or Discussion
+    url: https://discord.gg/sciorex
+    about: Ask questions and discuss with the community on Discord
+  - name: App Issues
+    url: https://github.com/sciorex/sciorex/issues
+    about: Report bugs or request features for the Sciorex app

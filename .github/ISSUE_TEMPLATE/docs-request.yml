@@ -1,0 +1,61 @@
+name: Documentation Request
+description: Request new documentation or improvements to existing content
+labels: ["enhancement", "documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us improve the documentation by suggesting new content or improvements!
+
+  - type: dropdown
+    id: request-type
+    attributes:
+      label: Request Type
+      options:
+        - New documentation page
+        - Expand existing page
+        - Add code examples
+        - Add tutorial/guide
+        - Improve explanation
+        - Add FAQ entry
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      description: What topic should be documented?
+      placeholder: How to configure custom MCP servers
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe what you'd like to see documented
+      placeholder: |
+        I'd like to see a guide on how to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Why is this documentation needed?
+      placeholder: |
+        This would help users who want to...
+    validations:
+      required: false
+
+  - type: input
+    id: related-pages
+    attributes:
+      label: Related Pages
+      description: Links to related documentation pages (if any)
+      placeholder: https://docs.sciorex.com/features/mcp
+    validations:
+      required: false
